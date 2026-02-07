@@ -41,7 +41,7 @@ export const StickyHeader: React.FC<StickyHeaderProps> = ({
         borderDimColor={borderDimColor}
         borderBottom={false}
         borderTop={isFirst}
-        paddingTop={isFirst ? 0 : 1}
+        paddingTop={0}
       >
         <Box paddingX={1}>{children}</Box>
         {/* Dark border to separate header from content. */}
@@ -68,7 +68,7 @@ export const StickyHeader: React.FC<StickyHeaderProps> = ({
       borderRight={true}
       paddingX={1}
       paddingBottom={1}
-      paddingTop={isFirst ? 0 : 1}
+      paddingTop={0}
     >
       {children}
     </Box>
